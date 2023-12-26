@@ -31,7 +31,7 @@ public class Kasir {
                     System.out.println("Nasi Goreng " + JumlahPorsi+ " Porsi : Rp" +TotalMakan);
                     break;
             case 2:
-                    TotalMakan = jum_porsi * 15.000;
+                    TotalMakan = JumlahPorsi * 15.000;
                     nama_makanan = " Mie Goreng Udang";
                     System.out.println("Mie Goreng " + JumlahPorsi+ "Porsi : Rp" +TotalMakan);
                     break;
