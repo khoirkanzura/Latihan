@@ -19,36 +19,43 @@ public class Kasir {
         System.out.print("Pilihan Makanan 1/2/3/4/5 : ");
             int makanan = sc.nextInt();
         System.out.print("Berapa Porsi : ");
-            int JumlahPorsi = sc.nextInt();
+            int Jumlah_Porsi = sc.nextInt();
             
         int TotalMakan = 0;
         String nama_makanan = null;
 
         switch(makanan) { 
             case 1:
-                    TotalMakan = JumlahPorsi * 12.000;
-                    nama_makanan = "Nasi Goreng";
-                    System.out.println("Nasi Goreng " + JumlahPorsi+ " Porsi : Rp" +TotalMakan);
-                    break;
+           // System.out.println("Masukkan jumlah porsi: ");
+            int jumlahPorsi = sc.nextInt();
+            System.out.println("Masukkan nama makanan: ");
+            String namaMakanan = sc.next();
+            int hargaMakanan = jumlahPorsi * 12000;
+            System.out.println("Total harga " + namaMakanan + ": " + hargaMakanan);
+            break;
+                    //TotalMakan = Jumlah_Porsi * 12.000;
+                    //nama_makanan = "Nasi Goreng";
+                    //System.out.println("Nasi Goreng " + Jumlah_Porsi+ " Porsi : Rp" +TotalMakan);
+                    //break;
             case 2:
-                    TotalMakan = JumlahPorsi * 15.000;
+                    TotalMakan = Jumlah_Porsi * 15.000;
                     nama_makanan = " Mie Goreng Udang";
-                    System.out.println("Mie Goreng " + JumlahPorsi+ "Porsi : Rp" +TotalMakan);
+                    System.out.println("Mie Goreng " + Jumlah_Porsi+ "Porsi : Rp" +TotalMakan);
                     break;
             case 3: 
-                    TotalMakan = jum_porsi * 12.000;
+                    TotalMakan = Jumlah_Porsi * 12.000;
                     nama_makanan = "Ayam Geprek";
-                    System.out.println("Ayam Geprek " + JumlahPorsi+ "Porsi : Rp" +TotalMakan);
+                    System.out.println("Ayam Geprek " + Jumlah_Porsi+ "Porsi : Rp" +TotalMakan);
                     break;
             case 4:
                     TotalMakan = jum_porsi * 15.000;
                     nama_makanan = "Bakso Mercon";
-                    System.out.println("Bakso Mercon " + JumlahPorsi+ "Porsi : Rp" +TotalMakan);
+                    System.out.println("Bakso Mercon " + Jumlah_Porsi+ "Porsi : Rp" +TotalMakan);
                     break;
             case 5:
                     TotalMakan = jum_porsi * 8.000;
                     nama_makanan = "Pecel";
-                    System.out.println("Pecel " + JumlahPorsi+ "Porsi : Rp" +TotalMakan);
+                    System.out.println("Pecel " + Jumlah_Porsi+ "Porsi : Rp" +TotalMakan);
                     break;
             default:
                     System.out.println("Pilihan Tidak Tersedia");
@@ -76,10 +83,17 @@ public class Kasir {
 
         switch(minuman) { 
             case 1:
-                    TotalMinuman = jum_porsi * 10.000;
-                    nama_minuman = "Jus Al-Pukat";
-                    System.out.println("Jus Al-Pukat " + JumlahGelas+ " Porsi : Rp" +TotalMinuman);
-                    break;
+            System.out.println("Masukkan jumlah gelas: ");
+            int jumlahGelas = sc.nextInt();
+            System.out.println("Masukkan nama minuman: ");
+            String namaMinuman = sc.next();
+            int hargaMinuman = jumlahGelas * 8000;
+            System.out.println("Total harga " + namaMinuman + ": " + hargaMinuman);
+            break;
+                //  TotalMinuman = JumlahGelas * 10.000;
+                    //nama_minuman = "Jus Al-Pukat";
+                    //System.out.println("Jus Al-Pukat " + JumlahGelas+ " Porsi : Rp" +TotalMinuman);
+                    //break;
             case 2:
                     TotalMinuman = jum_porsi * 8.000;
                     nama_minuman = "Milo";
@@ -111,7 +125,7 @@ public class Kasir {
         System.out.println("|               DAFTAR PEMBELIAN                |");
         System.out.println("|===============================================|");
         System.out.println("   Makanan : " +nama_makanan);
-        System.out.println("   Jumlah Porsi : " +JumlahPorsi);
+        System.out.println("   Jumlah Porsi : " +Jumlah_Porsi);
         System.out.println("   Minuman :  " +nama_minuman);
         System.out.println("   Jumlah Gelas : " +JumlahGelas);
         System.out.println("|===============================================|");
