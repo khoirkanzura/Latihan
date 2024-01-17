@@ -26,7 +26,7 @@ public class Kasir {
 
         switch(makanan) { 
             case 1:
-           // System.out.println("Masukkan jumlah porsi: ");
+            System.out.println("Masukkan jumlah porsi: ");
             int jumlahPorsi = sc.nextInt();
             System.out.println("Masukkan nama makanan: ");
             String namaMakanan = sc.next();

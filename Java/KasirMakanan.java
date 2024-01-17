@@ -1,13 +1,8 @@
 import java.util.Scanner;
-public class KasirMakaanan {
-    
-    import java.util.ArrayList;
-import java.util.Scanner;
-public class KasirMakaanan {
+public class KasirMakanan {
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        ArrayList<String> pesanan = new ArrayList<>();
 
         while (true) {
             System.out.println("\n|===============================================|");
@@ -82,5 +77,4 @@ public class KasirMakaanan {
             }
         }
     }
-}
 }
