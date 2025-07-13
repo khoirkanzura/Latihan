@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartu Ucapan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card-container" onclick="flipCard()">
+        <div class="card">
+            <div class="front">
+                <div class="header">
+                    <h1>Selamat Hari Spesial!</h1>
+                </div>
+                <div class="content">
+                    <img src="foto.jpg" alt="Foto Pacar" class="photo">
+                    <p>Untuk seseorang yang sangat spesial di hidupku,</p>
+                    <p>Semoga hari ini penuh dengan kebahagiaan dan cinta. Aku sangat beruntung memiliki kamu di hidupku.</p>
+                </div>
+                <div class="footer">
+                    <p>❤️❤️❤️</p>
+                </div>
+            </div>
+            <div class="back">
+                <div class="content">
+                    <p>Dengan cinta,</p>
+                    <p><strong>Nama Kamu</strong></p>
+                    <p>Tekan di sini untuk memutar lagu ulang tahun!</p>
+                    <button onclick="playSong()">Putar Lagu</button>
+                    <audio id="birthdaySong" src="lagu_ulang_tahun.mp3"></audio>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function flipCard() {
+            document.querySelector('.card').classList.toggle('flipped');
+        }
+
+        function playSong() {
+            document.getElementById('birthdaySong').play();
+        }
+    </script>
+</body>
+</html>
